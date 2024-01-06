@@ -13,13 +13,12 @@
     
     
     # ----------------规则集---------------------
-    
   rule-providers:
   #黑名单
     Sexy:
       type: http
       behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Sexy.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Porn.yaml"
       path: ./Suyiyi-Rule/Blacklist_Sexy.yaml
       interval: 86400
 
@@ -80,7 +79,7 @@
     DMMGame:
       type: http
       behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Games_DDM_JP.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Games_DDM-JP.yaml"
       path: ./Suyiyi-Rule/DMMGame.yaml
       interval: 86400
 
@@ -97,7 +96,7 @@
     Chat_Global:
       type: http
       behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Chat_Global"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Chat_Global.yaml"
       path: ./Suyiyi-Rule/Chat_Global.yaml
       interval: 86400
       
