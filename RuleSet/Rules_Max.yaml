@@ -1,103 +1,39 @@
-  # 代理集合
+    # ----------------订阅组---------------------
+    
   #proxy-providers:
 
 
     # ----------------前端策略组---------------------
     
-  proxy-groups:
-    #主要
-    - {name: 🚀 节点选择, type: select, proxies: [🇩🇪 欧洲A, 🇩🇪 欧洲B, 🇭🇰 香港, 🇯🇵 日本, 🇹🇼 台湾, 🇰🇷 韩国, 🇸🇬 新加坡, 🇺🇸 美国, 🇷🇺 俄罗斯, 🇦🇺 澳大利亚, 🌍其他A, 🌎其他B, 🚥自动A, 🚦自动B]}
+  #proxy-groups:
 
-
-    - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 直连, 🚀 节点选择]}
-    
-    
-    - {name: 🎮游戏, type: select, proxies: [🚀 节点选择, 🎯 直连]}
-
-
-    - {name: 💨游戏下载, type: select, proxies: [🚦自动B, 🚀 节点选择, 🎯 直连]}
-
-
-  #  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 直连, 🇭🇰 香港]}
-
-
-    - {name: 📺视频, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇯🇵 日本, 🇺🇸 美国]}
-    
-    
-    - {name: 📲社交平台, type: select, proxies: [ 🇺🇸 美国, 🇭🇰 香港, 🇯🇵 日本, 🇹🇼 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇦🇺 澳大利亚, 🇩🇪 欧洲A, 🇩🇪 欧洲B]}
-
-
-    - {name: Ⓜ️微软📢谷歌🍎苹果, type: select, proxies: [🎯 直连, 🚀 节点选择]}
-
-
-    - {name: 🎯 直连, type: select, proxies: [DIRECT]}
-
-
-
-
-
-
-    
-    # ----------------国家或地区策略组---------------------
-      #全自动选择
-      
-    - {name: 🚥自动A, type: url-test, tolerance: 100, lazy: false,interval: 120, use: [🛫主要]}
-    
-    - {name: 🚦自动B, type: url-test, tolerance: 100, lazy: false,interval: 120, use: [🛫备用]}
-      
-      #常规节点组
-    - {name: 🇯🇵 日本, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要, 🛫后备], filter: "(?i)日本"}
-      
-    - {name: 🇭🇰 香港, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要 , 🛫后备], filter: "(?i)港|hk"}
-    
-    - {name: 🇹🇼 台湾, type: load-balance, lazy: true, strategy: consistent-hashing, interval: 20,use: [🛫主要, 🛫后备], filter: "(?i)台|tw"}
-
-    - {name: 🇰🇷 韩国, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要], filter: "(?i)韩国"}
-
-    - {name: 🇸🇬 新加坡, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要, 🛫后备], filter: "(?i)新加坡"}
-
-    - {name: 🇺🇸 美国, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要, 🛫后备], filter: "(?i)美国"}
-    
-    - {name: 🇷🇺 俄罗斯, type: load-balance, strategy: consistent-hashing, lazy: true,interval: 20, use: [🛫主要], filter: "(?i)俄罗斯"}
-
-    - {name: 🇦🇺 澳大利亚, type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要], filter: "(?i)澳大利亚"}
-
-    - {name: 🇩🇪 欧洲A , type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要,🛫后备], filter: "(?i)德国|荷兰|法国"}
-    
-    - {name: 🇩🇪 欧洲B , type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要,🛫后备], filter: "(?i)瑞士|葡萄牙|北马其顿|奥地利"}
-    
-    - {name: 🌍其他A , type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要], filter: "(?i)阿联酋|菲律宾|迪拜"}
-
-    - {name: 🌎其他B , type: load-balance, strategy: consistent-hashing, lazy: true, interval: 20,use: [🛫主要], filter: "(?i)尼日利亚|南非|印尼|泰国"}
-    
-      #下载用
     
     
     
     
     
+    # ----------------规则集---------------------
     
-  # 规则集
   rule-providers:
   #黑名单
     Sexy:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/5ddec60c445b0363d3c45b050ad0f3ea/raw/ClashRule_SuyiyiBlacklist_Sexy.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Sexy.yaml"
       path: ./Suyiyi-Rule/Blacklist_Sexy.yaml
       interval: 86400
 
     Hijacking:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/25f75da596ace95834a9e9e8550ab0f0/raw/ClashRule_SuyiyiBlacklist_Hijacking.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Hijacking.yaml"
       path: ./Suyiyi-Rule/Blacklist_Hijacking.yaml
       interval: 86400
       
     AD:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/6e08455ee7bf78d066a16f632d202d06/raw/ClashRule_SuyiyiBlacklist_AD.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/AD.yaml"
       path: ./Suyiyi-Rule/Blacklist_AD.yaml
       interval: 86400
             
@@ -107,21 +43,21 @@
     GamesCN:
       type: http
       behavior: domain
-      url: "https://gist.githubusercontent.com/OcrSu/98db54448bc394fc4ef671bd012271dc/raw/ClashRule_SuyiyiDirect_GameCN.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Games_CN.yaml"
       path: ./Suyiyi-Rule/GamesCN.yaml
       interval: 86400
       
     Chat_CN:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/0c11a61a38eba9cfe4ffbc6217606352/raw/Clash_Rule-Chat_CN"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Chat_CN.yaml"
       path: ./Suyiyi-Rule/Chat_CN.yaml
       interval: 86400
       
     Media_CN:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/1ed0d8a0c433ddf1a90d244b1452e797/raw/ClashRule_SuyiyiDirect_MediaCN.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Media_CN.yaml"
       path: ./Suyiyi-Rule/Media_CN.yaml
       interval: 86400
       
@@ -130,21 +66,21 @@
     GamesGlobal:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/2a467da13b130955689015786341bf85/raw/ClashRule_SuyiyiProxy_GameGlobal.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Games_Global.yaml"
       path: ./Suyiyi-Rule/GameGlobal.yaml
       interval: 86400
 
     GamesDownload:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/6890f1a0a6dd034a9333793994dfc413/raw/ClashRule_SuyiyiProxy_GameDownload.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Games_Download.yaml"
       path: ./Suyiyi-Rule/GamesDownload.yaml
       interval: 86400
 
     DMMGame:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/e9cc563ab8db690111cab04cc0fd59c9/raw/ClashRule_SuyiyiProxy_GameDDM.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Games_DDM_JP.yaml"
       path: ./Suyiyi-Rule/DMMGame.yaml
       interval: 86400
 
@@ -153,7 +89,7 @@
     Media_Global:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/552519fa2b9e323ad1f38ee5513bc8ae/raw/ClashRule_SuyiyiProxy_MediaGlobal.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Media_Global.yaml"
       path: ./Suyiyi-Rule/Media_Global.yaml
       interval: 86400
 
@@ -161,7 +97,7 @@
     Chat_Global:
       type: http
       behavior: classical
-      url: "https://gist.githubusercontent.com/OcrSu/7504e67ae96e1b4150d32b1f9bc80e20/raw/Clash_Rule-Chat_Global"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/Chat_Global"
       path: ./Suyiyi-Rule/Chat_Global.yaml
       interval: 86400
       
@@ -169,7 +105,7 @@
     #BiliBili:
       #type: http
       #behavior: classical
-      #url: "https://gist.githubusercontent.com/OcrSu/90309818e9fd085742aece4a9ca15f77/raw/Clash_Rule_BiliBili"
+      #url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Proxy/BiliBili_Global.yaml"
       #path: ./Suyiyi-Rule/BiliBili.yaml
       #interval: 86400
 
@@ -202,14 +138,14 @@
     Suyiyi_Fish:
       type: http
       behavior: domain
-      url: "https://gist.githubusercontent.com/OcrSu/bea8c7f8824d49acbde1e52a89bbf408/raw/Clash_Rule-Suyiyi_Fish.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/SuyiyiExp.yaml"
       path: ./Suyiyi-Rule/Suyiyi_Fish.yaml
       interval: 86400
 
     ChinaDomain:
       type: http
       behavior: domain
-      url: "https://gist.githubusercontent.com/OcrSu/8a666b906e31b144c22170dd86b4e0c0/raw/ClashRule_SuyiyiDirect_ChinaDomain.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/ChinaDomain.yaml"
       path: ./Suyiyi-Rule/ChinaDomain.yaml
       interval: 86400
 
@@ -240,7 +176,7 @@
 
 
 
-  # 规则
+    # ----------------后端规则---------------------
   rules:
     - RULE-SET,Chat_CN,DIRECT
     - RULE-SET,Media_CN,DIRECT
