@@ -1,0 +1,50 @@
+# NAME: DMM
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# Suyiyi在经过实测后添加了一部分地址，仅限自用，如有侵犯权益请开一个issue告知。
+payload:
+  - DOMAIN-SUFFIX,akabeesoft2.com
+  - DOMAIN-SUFFIX,akabeesoft3.com
+  - DOMAIN-SUFFIX,akatsukiworks.com
+  - DOMAIN-SUFFIX,alicesoft.com
+  - DOMAIN-SUFFIX,api-p.videomarket.jp
+  - DOMAIN-SUFFIX,bluekai.com
+  - DOMAIN-SUFFIX,cosmiccute.com
+  - DOMAIN-SUFFIX,ddo.jp
+  - DOMAIN-SUFFIX,dmm-extension.com
+  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.com
+  - DOMAIN-SUFFIX,dmm.hk
+  - DOMAIN-SUFFIX,dmmapis.com
+  - DOMAIN-SUFFIX,dmmrex.com
+  - DOMAIN-SUFFIX,fout.jp
+  - DOMAIN-SUFFIX,gmossp-sp.jp
+  - DOMAIN-SUFFIX,hibiki-site.com
+  - DOMAIN-SUFFIX,i-mobile.co.jp
+  - DOMAIN-SUFFIX,im-apps.net
+  - DOMAIN-SUFFIX,impact-ad.jp
+  - DOMAIN-SUFFIX,ladsp.com
+  - DOMAIN-SUFFIX,microad.co.jp
+  - DOMAIN-SUFFIX,microad.jp
+  - DOMAIN-SUFFIX,minori.ph
+  - DOMAIN-SUFFIX,navismithapis-cdn.com
+  - DOMAIN-SUFFIX,socdm.com
+  - DOMAIN-SUFFIX,tenco.cc
+  - DOMAIN-SUFFIX,wheel-soft.com
+  - DOMAIN-SUFFIX,p-smith.com
+  - DOMAIN-SUFFIX,apidgp-gameplayer.games.dmm.com
+  - DOMAIN-SUFFIX,navismithapis.com
+  - DOMAIN-SUFFIX,navismithapis-cdn.com
+  - DOMAIN-SUFFIX,wsdgp.games.dmm.com
+  - DOMAIN-SUFFIX,d2ezz24t9nm0vu.cloudfront.net
+  - DOMAIN-SUFFIX,cdp.cloud.unity3d.com
+  - DOMAIN-SUFFIX,config.uca.cloud.unity3d.com
+  - DOMAIN-SUFFIX,gate.last-origin.com
+  - DOMAIN-SUFFIX,laokr.cdn.studio-valkyrie.com
+  - DOMAIN-SUFFIX,perf-events.cloud.unity3d.com
+  - DOMAIN-SUFFIX,operate-sdk-telemetry.unity3d.com
+  - DOMAIN-SUFFIX,mgr.gameguard.co
+  - IP-CIDR,125.6.189.7/32
+  - IP-CIDR,203.104.209.7/32
+
+
