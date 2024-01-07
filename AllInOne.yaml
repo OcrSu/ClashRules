@@ -15,52 +15,29 @@
     # ----------------规则集---------------------
   rule-providers:
   #黑名单
-    Porn:
+    BlackList:
       type: http
       behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Porn.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/AllInOne.yaml"
       path: ./Suyiyi-Rule/Blacklist_Sexy.yaml
       interval: 86400
-
-    Hijacking:
-      type: http
-      behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/Hijacking.yaml"
-      path: ./Suyiyi-Rule/Blacklist_Hijacking.yaml
-      interval: 86400
       
-    AD:
-      type: http
-      behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/BlackList/AD.yaml"
-      path: ./Suyiyi-Rule/Blacklist_AD.yaml
-      interval: 86400
-            
-      
-      
-  #国内站点等
-    GamesCN:
+  #直连
+    Direct:
       type: http
       behavior: domain
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Games_CN.yaml"
+      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/AllInOne.yaml"
       path: ./Suyiyi-Rule/GamesCN.yaml
       interval: 86400
-      
-    ChatCN:
-      type: http
-      behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Chat_CN.yaml"
-      path: ./Suyiyi-Rule/Chat_CN.yaml
-      interval: 86400
-      
-    MediaCN:
-      type: http
-      behavior: classical
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/Media_CN.yaml"
-      path: ./Suyiyi-Rule/Media_CN.yaml
-      interval: 86400
-      
 
+    CN-Cidr:
+      type: http
+      behavior: ipcidr
+      url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+      path: ./ruleset/CN-Cidr.yaml
+      interval: 86400
+      
+      
   #国外游戏
     GamesGlobal:
       type: http
@@ -132,32 +109,6 @@
       path: ./ruleset/google-cn.yaml
       interval: 86400
 
-  #直连/私有域名/局域网
-
-    SuyiyiExp:
-      type: http
-      behavior: domain
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/SuyiyiExp.yaml"
-      path: ./Suyiyi-Rule/Suyiyi_Fish.yaml
-      interval: 86400
-
-    ChinaDomain:
-      type: http
-      behavior: domain
-      url: "https://raw.githubusercontent.com/OcrSu/ClashRules/main/RulesProvider/Direct/ChinaDomain.yaml"
-      path: ./Suyiyi-Rule/ChinaDomain.yaml
-      interval: 86400
-
-    CN-Cidr:
-      type: http
-      behavior: ipcidr
-      url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-      path: ./ruleset/CN-Cidr.yaml
-      interval: 86400
-      
-
-      
-
   #代理
     Proxy:
       type: http
@@ -177,18 +128,12 @@
 
     # ----------------后端规则---------------------
   rules:
-    - RULE-SET,ChatCN,DIRECT
-    - RULE-SET,MediaCN,DIRECT
-    - RULE-SET,GamesCN,DIRECT
-    - RULE-SET,SuyiyiExp,DIRECT
-    - RULE-SET,ChinaDomain,DIRECT
+    - RULE-SET,Direct,DIRECT
     - RULE-SET,CN-Cidr,DIRECT
 
     
     - DOMAIN,events.data.microsoft.com,REJECT #拦截微软部分遥测
-    - RULE-SET,Porn,REJECT
-    - RULE-SET,Hijacking,REJECT
-    - RULE-SET,AD,REJECT
+    - RULE-SET,BlackList,REJECT
 
     - DOMAIN-SUFFIX,voidsec.com,🚀 节点选择
     - DOMAIN-SUFFIX,browserleaks.com,🚀 节点选择
