@@ -1,4 +1,4 @@
-# ClashRules_Suyiyi
+# ClashRules
 这里是Suyiyi的自用规则仓库，主要用于存放规则；有需要可以自取，直接Clone到自己仓库里就好。
 
 目前采用手动更新方式，暂时不打算做CDN缓存加速。
