@@ -1,9 +1,9 @@
 payload:
   #这里是由Suyiyi维护的代理规则，这里都是我自己在上网时发现没有被正确规则分流的网站。
-#DNS泄露测试
-- DOMAIN-SUFFIX,voidsec.com
-- DOMAIN-SUFFIX,browserleaks.com
-- DOMAIN-SUFFIX,ipleak.net
-#机场官网
-- DOMAIN-SUFFIX,reimu.work
-- DOMAIN-SUFFIX,uk.taishan.pro
+  #DNS泄露测试
+  - DOMAIN-SUFFIX,voidsec.com
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,ipleak.net
+  #机场官网
+  - DOMAIN-SUFFIX,reimu.work
+  - DOMAIN-SUFFIX,uk.taishan.pro

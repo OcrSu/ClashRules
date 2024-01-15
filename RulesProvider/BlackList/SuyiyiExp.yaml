@@ -1,5 +1,5 @@
 payload:
-  #Microsoft_Data收集
+  #微软部分遥测
   - DOMAIN,events.data.microsoft.com
   #PORN
   - DOMAIN-KEYWORD,porn
