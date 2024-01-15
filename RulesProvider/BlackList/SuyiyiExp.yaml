@@ -1,4 +1,7 @@
 payload:
+  #Microsoft_Data收集
+  - DOMAIN,events.data.microsoft.com
+  #PORN
   - DOMAIN-KEYWORD,porn
   - DOMAIN-KEYWORD,sex
   - DOMAIN-KEYWORD,jav
@@ -16,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,phncdn.com
   - DOMAIN-SUFFIX,phprcdn.com
   - DOMAIN-SUFFIX,pornhub.com
+  - DOMAIN-SUFFIX,cn.pornhub.com
   - DOMAIN-SUFFIX,pornhubpremium.com
   - DOMAIN-SUFFIX,rdtcdn.com
   - DOMAIN-SUFFIX,redtube.com
