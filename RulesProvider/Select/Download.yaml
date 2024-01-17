@@ -14,3 +14,29 @@ payload:
   - IP-CIDR6,2a0b:e44:1::/48
   - IP-CIDR6,2a0b:e45:1::/48
   - PROCESS-NAME,mega.privacy.android.app
+
+  # OneDrive
+  - DOMAIN-KEYWORD,1drv
+  - DOMAIN-KEYWORD,onedrive
+  - DOMAIN-KEYWORD,skydrive
+  - DOMAIN-SUFFIX,livefilestore.com
+  - DOMAIN-SUFFIX,oneclient.sfx.ms
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,photos.live.com
+  - DOMAIN-SUFFIX,skydrive.wns.windows.com
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
+  - DOMAIN-SUFFIX,storage.live.com
+  - DOMAIN-SUFFIX,storage.msn.com
+  
+  # TeraBox
+  - DOMAIN-SUFFIX,terabox.com
+  - DOMAIN-SUFFIX,teraboxcdn.com
+  
+  # GoogleDrive
+  - DOMAIN,www.googleapis.com
+  - DOMAIN-SUFFIX,docs.google.com
+  - DOMAIN-SUFFIX,drive.google.com
+  - DOMAIN-SUFFIX,googledrive.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - PROCESS-NAME,BackupandSync

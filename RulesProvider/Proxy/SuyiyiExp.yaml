@@ -1,13 +1,54 @@
 payload:
   #这里是由Suyiyi维护的代理规则，这里都是我自己在上网时发现没有被正确规则分流的网站。
+  
+  # ACL4SSRList
+  - DOMAIN-SUFFIX,1password.com
+  - DOMAIN-SUFFIX,adguard.org
+  - DOMAIN-SUFFIX,bit.no.com
+  - DOMAIN-SUFFIX,btlibrary.me
+  - DOMAIN-SUFFIX,cccat.io
+  - DOMAIN-SUFFIX,chat.openai.com
+  - DOMAIN-SUFFIX,cloudcone.com
+  - DOMAIN-SUFFIX,dubox.com
+  - DOMAIN-SUFFIX,gameloft.com
+  - DOMAIN-SUFFIX,garena.com
+  - DOMAIN-SUFFIX,hoyolab.com
+  - DOMAIN-SUFFIX,inoreader.com
+  - DOMAIN-SUFFIX,ip138.com
+  - DOMAIN-SUFFIX,linkedin.com
+  - DOMAIN-SUFFIX,myteamspeak.com
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,ping.pe
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,teddysun.com
+  - DOMAIN-SUFFIX,tumbex.com
+  - DOMAIN-SUFFIX,twdvd.com
+  - DOMAIN-SUFFIX,unsplash.com
+  - DOMAIN-SUFFIX,buzzsprout.com
+  
+  #国外域名
+  - DOMAIN-SUFFIX,eu
+  - DOMAIN-SUFFIX,hk
+  - DOMAIN-SUFFIX,jp
+  - DOMAIN-SUFFIX,kr
+  - DOMAIN-SUFFIX,sg
+  - DOMAIN-SUFFIX,tw
+  - DOMAIN-SUFFIX,uk
+  - DOMAIN-SUFFIX,us
+  - DOMAIN-SUFFIX,ca
+  
   #DNS泄露测试
   - DOMAIN-SUFFIX,voidsec.com
   - DOMAIN-SUFFIX,browserleaks.com
   - DOMAIN-SUFFIX,ipleak.net
+  
   #机场官网
   - DOMAIN-SUFFIX,reimu.work
   - DOMAIN-SUFFIX,uk.taishan.pro
+  
   #Github
+  - DOMAIN-KEYWORD,github
   - DOMAIN-SUFFIX,atom.io
   - DOMAIN-SUFFIX,dependabot.com
   - DOMAIN-SUFFIX,ghcr.io
@@ -37,7 +78,33 @@ payload:
   - DOMAIN-SUFFIX,rawgithub.com
   - DOMAIN-SUFFIX,repo.new
   - DOMAIN-SUFFIX,thegithubshop.com
-  - DOMAIN-KEYWORD,github
+
+  
+  # BBC
+  - DOMAIN-KEYWORD,uk-live
+  - DOMAIN-SUFFIX,bbc.co
+  - DOMAIN-SUFFIX,bbc.com
+  
+  #Developer
+  - DOMAIN-SUFFIX,apache.org
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,elastic.co
+  - DOMAIN-SUFFIX,elastic.com
+  - DOMAIN-SUFFIX,gcr.io
+  - DOMAIN-SUFFIX,gitlab.com
+  - DOMAIN-SUFFIX,gitlab.io
+  - DOMAIN-SUFFIX,jitpack.io
+  - DOMAIN-SUFFIX,maven.org
+  - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,mvnrepository.com
+  - DOMAIN-SUFFIX,quay.io
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,redhat.com
+  - DOMAIN-SUFFIX,sonatype.org
+  - DOMAIN-SUFFIX,sourcegraph.com
+  - DOMAIN-SUFFIX,spring.io
+  - DOMAIN-SUFFIX,spring.net
+  
   #Wikipedia
   - DOMAIN-SUFFIX,mediawiki.org
   - DOMAIN-SUFFIX,wikibooks.org
@@ -51,6 +118,7 @@ payload:
   - DOMAIN-SUFFIX,wikiversity.org
   - DOMAIN-SUFFIX,wikivoyage.org
   - DOMAIN-SUFFIX,wiktionary.org
+  
   #Wikimedia
   - DOMAIN-SUFFIX,mediawiki.org
   - DOMAIN-SUFFIX,toolforge.org
@@ -72,6 +140,7 @@ payload:
   - DOMAIN-SUFFIX,wmcloud.org
   - DOMAIN-SUFFIX,wmflabs.org
   - DOMAIN-SUFFIX,wmfusercontent.org
+  
   #Vercel
   - DOMAIN-SUFFIX,err.sh
   - DOMAIN-SUFFIX,hyper.is
@@ -100,6 +169,7 @@ payload:
   - DOMAIN-SUFFIX,zeit.co
   - DOMAIN-SUFFIX,zeit.sh
   - DOMAIN-SUFFIX,zeitworld.com
+  
   #DuckDuckGo
   - DOMAIN-SUFFIX,cispaletter.com
   - DOMAIN-SUFFIX,cispaletter.org
@@ -144,6 +214,7 @@ payload:
   - DOMAIN-SUFFIX,privacysimplified.com
   - DOMAIN-SUFFIX,privatebrowsingmyths.com
   - DOMAIN-SUFFIX,spreadprivacy.com
+  
   #Google
   - DOMAIN-SUFFIX,0emm.com
   - DOMAIN-SUFFIX,1e100.net
