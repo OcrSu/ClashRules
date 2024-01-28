@@ -25,12 +25,15 @@ payload:
   
   #原神/崩铁 国服
   - PROCESS-NAME,YuanShen.exe
+  - PROCESS-NAME,fastcdn.mihoyo.com
   - DOMAIN-SUFFIX,yuanshen.site
   - DOMAIN-SUFFIX,v3.yuanshen.site
   - DOMAIN-SUFFIX,ys.mihoyo.com
   - DOMAIN-SUFFIX,apm-log-upload.mihoyo.com
   - DOMAIN-SUFFIX,rpg-t-ensfz6-wssping.mhystatic.com
   - DOMAIN-SUFFIX,prod-telecom-gy16-wsspingsvr.mhystatic.com
+  - DOMAIN-SUFFIX,prod-gf-cn-dp01.bhsr.com
+
   
   # 本地/局域网地址
   - DOMAIN-SUFFIX,ip6-localhost
