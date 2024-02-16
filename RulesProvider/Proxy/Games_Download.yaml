@@ -4,6 +4,9 @@ payload:
   #GameDownload
   #minecraftforge
   - DOMAIN,maven.minecraftforge.net
+  #CloudStore
+  - DOMAIN-KEYWORD,mediafire
+
   #other
   - DOMAIN,assets1.xboxlive.com
   - DOMAIN,assets2.xboxlive.com
