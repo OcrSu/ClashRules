@@ -40,3 +40,9 @@ payload:
   - DOMAIN-SUFFIX,googledrive.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - PROCESS-NAME,BackupandSync
+  
+  # Mediafire
+  - DOMAIN-KEYWORD,mediafire #mediafire
+  
+  #Pixeldrain
+  - DOMAIN-KEYWORD,pixeldrain
