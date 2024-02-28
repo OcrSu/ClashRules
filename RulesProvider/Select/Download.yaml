@@ -43,3 +43,6 @@ payload:
   
   #Pixeldrain
   - DOMAIN-KEYWORD,pixeldrain
+  
+  #Pytorch
+  - DOMAIN-SUFFIX,download.pytorch.org
