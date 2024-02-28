@@ -46,3 +46,6 @@ payload:
   
   #Pytorch
   - DOMAIN-SUFFIX,download.pytorch.org
+  
+  #Github
+  - DOMAIN-SUFFIX,objects.githubusercontent.com
