@@ -24,6 +24,7 @@ payload:
   - DOMAIN-SUFFIX,c1026.lanosso.com
   - DOMAIN-SUFFIX,blog.csdn.net
   - DOMAIN-SUFFIX,www.114514123.xyz
+  - DOMAIN-SUFFIX,xhz77-my.sharepoint.com
 
   #原神/崩铁 国服
   - PROCESS-NAME,YuanShen.exe
