@@ -43,6 +43,7 @@ payload:
   #机场官网
 - DOMAIN-SUFFIX,reimu.work
 - DOMAIN-SUFFIX,uk.taishan.pro
+- DOMAIN-SUFFIX,jp.taishan.pro
 
   # BBC
 - DOMAIN-KEYWORD,uk-live
