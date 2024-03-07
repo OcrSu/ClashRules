@@ -1,3 +1,4 @@
+payload:
   #Github
 - DOMAIN-KEYWORD,github
 - DOMAIN-SUFFIX,atom.io
@@ -31,7 +32,11 @@
 - DOMAIN-SUFFIX,rawgithub.com
 - DOMAIN-SUFFIX,repo.new
 - DOMAIN-SUFFIX,thegithubshop.com
+- DOMAIN-SUFFIX,objects.githubusercontent.com
+- DOMAIN-SUFFIX,raw.githubusercontent.com
 
+  #Pytorch
+- DOMAIN-SUFFIX,download.pytorch.org
 
   #Developer
 - DOMAIN-SUFFIX,apache.org
