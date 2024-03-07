@@ -44,12 +44,12 @@ payload:
 - DOMAIN-SUFFIX,reimu.work
 - DOMAIN-SUFFIX,uk.taishan.pro
 - DOMAIN-SUFFIX,jp.taishan.pro
+- DOMAIN-SUFFIX,y.luxury
 
   # BBC
 - DOMAIN-KEYWORD,uk-live
 - DOMAIN-SUFFIX,bbc.co
 - DOMAIN-SUFFIX,bbc.com
-
 
   #Wikipedia
 - DOMAIN-SUFFIX,mediawiki.org
