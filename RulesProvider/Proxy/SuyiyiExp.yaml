@@ -44,64 +44,11 @@ payload:
 - DOMAIN-SUFFIX,reimu.work
 - DOMAIN-SUFFIX,uk.taishan.pro
 
-  #Github
-- DOMAIN-KEYWORD,github
-- DOMAIN-SUFFIX,atom.io
-- DOMAIN-SUFFIX,alive.github.com
-- DOMAIN-SUFFIX,dependabot.com
-- DOMAIN-SUFFIX,ghcr.io
-- DOMAIN-SUFFIX,git.io
-- DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
-- DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
-- DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
-- DOMAIN-SUFFIX,github.blog
-- DOMAIN-SUFFIX,github.githubassets.com
-- DOMAIN-SUFFIX,github.com
-- DOMAIN-SUFFIX,github.community
-- DOMAIN-SUFFIX,github.dev
-- DOMAIN-SUFFIX,github.io
-- DOMAIN-SUFFIX,githubapp.com
-- DOMAIN-SUFFIX,githubassets.com
-- DOMAIN-SUFFIX,githubhackathon.com
-- DOMAIN-SUFFIX,githubnext.com
-- DOMAIN-SUFFIX,githubpreview.dev
-- DOMAIN-SUFFIX,githubstatus.com
-- DOMAIN-SUFFIX,githubuniverse.com
-- DOMAIN-SUFFIX,githubusercontent.com
-- DOMAIN-SUFFIX,myoctocat.com
-- DOMAIN-SUFFIX,npm.community
-- DOMAIN-SUFFIX,npmjs.com
-- DOMAIN-SUFFIX,npmjs.org
-- DOMAIN-SUFFIX,opensource.guide
-- DOMAIN-SUFFIX,rawgit.com
-- DOMAIN-SUFFIX,rawgithub.com
-- DOMAIN-SUFFIX,repo.new
-- DOMAIN-SUFFIX,thegithubshop.com
-
   # BBC
 - DOMAIN-KEYWORD,uk-live
 - DOMAIN-SUFFIX,bbc.co
 - DOMAIN-SUFFIX,bbc.com
 
-  #Developer
-- DOMAIN-SUFFIX,apache.org
-- DOMAIN-SUFFIX,docker.com
-- DOMAIN-SUFFIX,elastic.co
-- DOMAIN-SUFFIX,elastic.com
-- DOMAIN-SUFFIX,gcr.io
-- DOMAIN-SUFFIX,gitlab.com
-- DOMAIN-SUFFIX,gitlab.io
-- DOMAIN-SUFFIX,jitpack.io
-- DOMAIN-SUFFIX,maven.org
-- DOMAIN-SUFFIX,medium.com
-- DOMAIN-SUFFIX,mvnrepository.com
-- DOMAIN-SUFFIX,quay.io
-- DOMAIN-SUFFIX,reddit.com
-- DOMAIN-SUFFIX,redhat.com
-- DOMAIN-SUFFIX,sonatype.org
-- DOMAIN-SUFFIX,sourcegraph.com
-- DOMAIN-SUFFIX,spring.io
-- DOMAIN-SUFFIX,spring.net
 
   #Wikipedia
 - DOMAIN-SUFFIX,mediawiki.org
@@ -139,34 +86,6 @@ payload:
 - DOMAIN-SUFFIX,wmflabs.org
 - DOMAIN-SUFFIX,wmfusercontent.org
 
-  #Vercel
-- DOMAIN-SUFFIX,err.sh
-- DOMAIN-SUFFIX,hyper.is
-- DOMAIN-SUFFIX,nextjs.org
-- DOMAIN-SUFFIX,now.sh
-- DOMAIN-SUFFIX,static.fun
-- DOMAIN-SUFFIX,title.sh
-- DOMAIN-SUFFIX,turborepo.org
-- DOMAIN-SUFFIX,vercel-analytics.com
-- DOMAIN-SUFFIX,vercel-dns.com
-- DOMAIN-SUFFIX,vercel-insights.com
-- DOMAIN-SUFFIX,vercel-status.com
-- DOMAIN-SUFFIX,vercel.app
-- DOMAIN-SUFFIX,vercel.blog
-- DOMAIN-SUFFIX,vercel.com
-- DOMAIN-SUFFIX,vercel.events
-- DOMAIN-SUFFIX,vercel.link
-- DOMAIN-SUFFIX,vercel.live
-- DOMAIN-SUFFIX,vercel.pub
-- DOMAIN-SUFFIX,vercel.sh
-- DOMAIN-SUFFIX,vercel.store
-- DOMAIN-SUFFIX,zeit-world.co.uk
-- DOMAIN-SUFFIX,zeit-world.com
-- DOMAIN-SUFFIX,zeit-world.net
-- DOMAIN-SUFFIX,zeit-world.org
-- DOMAIN-SUFFIX,zeit.co
-- DOMAIN-SUFFIX,zeit.sh
-- DOMAIN-SUFFIX,zeitworld.com
 
   #DuckDuckGo
 - DOMAIN-SUFFIX,cispaletter.com
@@ -214,6 +133,11 @@ payload:
 - DOMAIN-SUFFIX,spreadprivacy.com
 
   #Google
+- DOMAIN-KEYWORD,appspot
+- DOMAIN-KEYWORD,blogspot
+- DOMAIN-KEYWORD,gmail
+- DOMAIN-KEYWORD,google
+- DOMAIN-KEYWORD,recaptcha
 - DOMAIN-SUFFIX,0emm.com
 - DOMAIN-SUFFIX,1e100.net
 - DOMAIN-SUFFIX,1ucrs.com
@@ -925,11 +849,6 @@ payload:
 - DOMAIN-SUFFIX,zynamics.com
 - DOMAIN-SUFFIX,googledrive.com
 - DOMAIN-SUFFIX,googleusercontent.com
-- DOMAIN-KEYWORD,appspot
-- DOMAIN-KEYWORD,blogspot
-- DOMAIN-KEYWORD,gmail
-- DOMAIN-KEYWORD,google
-- DOMAIN-KEYWORD,recaptcha
 - IP-CIDR,172.110.32.0/21
 - IP-CIDR,173.194.0.0/16
 - IP-CIDR,216.73.80.0/20
