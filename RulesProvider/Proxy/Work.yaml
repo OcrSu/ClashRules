@@ -35,6 +35,9 @@ payload:
 - DOMAIN-SUFFIX,objects.githubusercontent.com
 - DOMAIN-SUFFIX,raw.githubusercontent.com
 
+  #Civitai
+- DOMAIN-KEYWORD,Civitai
+
   #Pytorch
 - DOMAIN-SUFFIX,download.pytorch.org
 
