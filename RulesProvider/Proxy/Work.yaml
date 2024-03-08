@@ -37,6 +37,7 @@ payload:
 
   #Civitai
 - DOMAIN-KEYWORD,Civitai
+- DOMAIN-SUFFIX,signals.civitai.com
 
   #Pytorch
 - DOMAIN-SUFFIX,download.pytorch.org
